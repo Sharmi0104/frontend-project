@@ -1,0 +1,237 @@
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  min-height: 100px;    /* Set slide height here */
+  align-items:center;
+  min-width: 200px;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style the footer */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:black;
+  color: white;
+  text-align: right;
+
+}
+.navRight{
+  align-content: flex-end;
+  align-items: flex-end;
+  margin-left: 1000px;
+}
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.headerStyle{
+  font-family: Kunstler Script;
+  font-size: 52px;
+  
+}
+/*gallery*/
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 200px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 50%;
+  height: 80px;
+cursor: pointer;
+
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family:Arial;
+  font-size: 20px;
+  /*font-weight: bold;*/
+}
+p.desc {
+  padding: 10px;
+  text-align: center;
+  font-family:Arial;
+  font-size: 15px;
+  /*font-weight: bold;*/
+}
+.aligntot {
+  padding: 15px;
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  
+}
+.StyleBorder{
+  width:200px;
+  border: 1px solid black;
+  height: 100px;
+  
+}
+.itemAlign{
+  /*margin-left:50px;*/
+  padding: 10px;
+  text-align: center;
+  align-content: center;
+  font-weight: bold;
+  font-size: 12pt;
+}
+.alignRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5px;
+  /*justify-content: space-between;
+margin-left: 5px;*/
+}
+.alignCol {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-left: 100px;
+  /*margin-right: 100px; */
+}
+.plusMinusButtonAlign{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left:50px;
+ }
+.plusMinusButton {
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  padding: 0;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  /*background-color:teal;*/
+  /* Rounded Corners */
+  border: none;
+  border-radius: 25px;
+  background-color: gray;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+}
+.serveTextBx {
+  width: 2em;
+  height: 2em;
+  
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  border-color: teal;
+  border: 1px;
+  border-radius: 17px;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  border-color: teal;
+}
+
+table,td {
+  border: 1px solid black;
+}
+.tableStyle{
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 50px;
+
+}
+.alignButton{
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+.alignButton1{
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 50px;
+}
